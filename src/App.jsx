@@ -66,7 +66,16 @@ function App() {
       {showContent && (
          <div className="main w-full">
            <div className="landing w-full h-screen bg-[#000]">
-               <div className="navBar absolute top-0 left-0 z-[10] w-full py-7 px-7 bg-red-700"></div>
+               <div className="navBar absolute top-0 left-0 z-[10] w-full h-[11vh] border-2 border-white">
+                 <div className="logo flex gap-4 align-center justify-center absolute top-1/2 left-5 -translate-y-1/2">
+                    <div className="lines flex flex-col align-center justify-center gap-[2px]">
+                       <div className="line h-[3px] w-8 bg-white"></div>
+                       <div className="line h-[3px] w-5 bg-white"></div>
+                       <div className="line h-[3px] w-3 bg-white"></div>
+                    </div>
+                    <h3 className="logo-text text-[2rem] text-white font-[900]">ROCKSTAR</h3>
+                 </div>
+               </div>
                <div className="imagesDiv relative w-full h-screen overflow-hidden">
                   <img src="./sky.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
                   <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
