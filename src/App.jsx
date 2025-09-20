@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { gsap } from 'gsap';
 import {useGSAP} from '@gsap/react';
 
 
 function App() {
   
+  let [showContent, setShowContent] = useState(false);
+
   useGSAP(() => {
     const tl = gsap.timeline();
 
@@ -21,6 +23,13 @@ function App() {
         ease: "Expo.easeInOut",
         transformOrigin: "50% 50%",
         opacity: 0,
+        onUpdate: function() {
+          if(this.progress() >= .9) {
+            document.querySelector(".svg").remove();
+            setShowContent(true);
+            this.kill();
+          }
+        }
     })
   })
 
@@ -54,6 +63,17 @@ function App() {
                 />
            </svg>
       </div>
+      {showContent && (
+         <div className="main w-full">
+           <div className="landing w-full h-screen bg-[#000]">
+               <div className="imagesDiv relative w-full h-screen">
+                  <img src="./sky.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
+                  <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
+                  <img src="./girlbg.png" alt="Image" className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
+               </div>
+           </div>
+         </div>
+      )}
     </div>
   )
 }
