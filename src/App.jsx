@@ -66,10 +66,11 @@ function App() {
       {showContent && (
          <div className="main w-full">
            <div className="landing w-full h-screen bg-[#000]">
-               <div className="imagesDiv relative w-full h-screen">
+               <div className="navBar absolute top-0 left-0 z-[10] w-full py-7 px-7 bg-red-700"></div>
+               <div className="imagesDiv relative w-full h-screen overflow-hidden">
                   <img src="./sky.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
                   <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
-                  <img src="./girlbg.png" alt="Image" className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
+                  <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
                </div>
            </div>
          </div>

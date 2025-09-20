@@ -6,3 +6,11 @@ html,body {
     font-family: "Sansation", sans-serif;
     background-color: #000;
 }
+
+@media  screen and (max-width: 768px) {
+    .Gimg {
+        width: 60vw;
+        top: 30%;
+    }
+    
+}
