@@ -66,9 +66,9 @@ function App() {
       {showContent && (
          <div className="main w-full">
            <div className="landing w-full h-screen bg-[#000]">
-               <div className="navBar absolute top-0 left-0 z-[10] w-full h-[11vh] border-2 border-white">
+               <div className="navBar absolute top-0 left-0 z-[10] w-full h-[11vh]">
                  <div className="logo flex gap-4 align-center justify-center absolute top-1/2 left-5 -translate-y-1/2">
-                    <div className="lines flex flex-col align-center justify-center gap-[2px]">
+                    <div className="lines flex flex-col align-center justify-center gap-[2px] cursor-pointer">
                        <div className="line h-[3px] w-8 bg-white"></div>
                        <div className="line h-[3px] w-5 bg-white"></div>
                        <div className="line h-[3px] w-3 bg-white"></div>
@@ -80,6 +80,9 @@ function App() {
                   <img src="./sky.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
                   <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
                   <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
+               </div>
+               <div className="btmBar w-full h-[11vh] border-2 border-white absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent">
+                  
                </div>
            </div>
          </div>
