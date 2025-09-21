@@ -10,6 +10,11 @@ html,body {
     font-family: "Bagel Fat One", system-ui;
   font-weight: 400;
 }
+.text-d  h1{
+    font-family: "Chicle", serif;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
 
 @media  screen and (max-width: 768px) {
     .Gimg {
