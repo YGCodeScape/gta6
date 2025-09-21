@@ -21,5 +21,19 @@ html,body {
         width: 60vw;
         top: 30%;
     }
+    .logo-text {
+        font-size: 1.6rem;
+    }
+    .text-d {
+        gap: 20vh;
+        top: 25%;
+        left: 55%;
+    }
+    .text-d h1 {
+        font-size : 7rem;
+    }
+    .text-d h1:nth-child(2) {
+        margin-left: 250px;
+    }
     
 }

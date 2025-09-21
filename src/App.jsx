@@ -31,7 +31,16 @@ function App() {
           }
         }
     })
-  })
+  });
+
+  useGSAP(() => {
+     const main = document.querySelector(".main");
+
+     main?.addEventListener("mousemove", function(e) {
+      console.log(e);
+     })
+  },[showContent]);
+
 
   return (
     <div>
@@ -90,7 +99,7 @@ function App() {
                </div>
                <div className="btmBar w-full py-4 absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent pl-5">
                   <div className=" flex gap-1 text-white items-center">
-                      <i class="ri-arrow-down-double-line text-[1.4rem]"></i>
+                      <i className="ri-arrow-down-double-line text-[1.4rem]"></i>
                       <h3 className="uppercase text-[0.9rem] font-[900] leading-0 text-center">Scroll Down</h3>
                   </div>
                   <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[55px]' src="./ps5.png" alt="" />
