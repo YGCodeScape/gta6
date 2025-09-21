@@ -81,8 +81,12 @@ function App() {
                   <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
                   <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
                </div>
-               <div className="btmBar w-full h-[11vh] border-2 border-white absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent">
-                  
+               <div className="btmBar w-full h-[11vh] border-2 border-white absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent pl-5">
+                  <div className="flex gap-1 text-white items-center leading-0 pt-4">
+                      <i class="ri-arrow-down-double-line text-[2rem]"></i>
+                      <h3 className="uppercase text-[1.1rem]">Scroll Down</h3>
+                  </div>
+                  <img className='absolute top-[28%] left-[11%] -translate-x-1/2 h-[8vh] w-[20vw]' src="./ps5.png" alt="" />
                </div>
            </div>
          </div>
