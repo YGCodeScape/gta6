@@ -35,5 +35,44 @@ html,body {
     .text-d h1:nth-child(2) {
         margin-left: 250px;
     }
-    
+    text {
+        font-size: 30rem;
+    }
+    .svg{
+        margin-top: 100px;
+    }
+}
+@media  screen and (max-width: 450px) {
+    .Gimg {
+        width: 150vw;
+        top: 35%;
+    }
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    .text-d {
+        gap: 11vh;
+        top: 35%;
+        left: 50%;
+    }
+    .text-d h1 {
+        font-size : 6rem;
+    }
+    .text-d h1:nth-child(2) {
+        margin-left: 160px;
+    }
+    .bicon {
+        margin-bottom: 55px;
+        justify-content: center;
+    }
+    .btmBar {
+        padding-left : 0;
+    }
+    text {
+        font-size: 30rem;
+    }
+    .svg{
+        margin-top: 350px;
+    }
+
 }

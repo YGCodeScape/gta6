@@ -98,7 +98,7 @@ function App() {
                   <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
                </div>
                <div className="btmBar w-full py-4 absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent pl-5">
-                  <div className=" flex gap-1 text-white items-center">
+                  <div className="bicon flex gap-1 text-white items-center">
                       <i className="ri-arrow-down-double-line text-[1.4rem]"></i>
                       <h3 className="uppercase text-[0.9rem] font-[900] leading-0 text-center">Scroll Down</h3>
                   </div>
