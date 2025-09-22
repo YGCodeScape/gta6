@@ -47,6 +47,9 @@ html,body {
     }
 }
 @media  screen and (max-width: 450px) {
+    .landing  {
+        overflow: hidden;
+    }
     .Gimg {
         width: 150vw;
         top: 35%;
