@@ -33,22 +33,22 @@ function App() {
     })
   });
 
-  useGSAP(() => {
-     const main = document.querySelector(".main");
+  // useGSAP(() => {
+  //    const main = document.querySelector(".main");
 
-     main?.addEventListener("mousemove", function(e) {
-       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
-       gsap.to(".imagesDiv .text-d", {
-          x: `${ -50 - xMove}%`,
-       })
-       gsap.to(".imagesDiv .sky-img", {
-          x: xMove,
-       })
-       gsap.to(".imagesDiv .bg-img", {
-          x: xMove * 0.3,
-       })
-     })
-  },[showContent]);
+  //    main?.addEventListener("mousemove", function(e) {
+  //      const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+  //      gsap.to(".imagesDiv .text-d", {
+  //         x: `${ -50 - xMove}%`,
+  //      })
+  //      gsap.to(".imagesDiv .sky-img", {
+  //         x: xMove,
+  //      })
+  //      gsap.to(".imagesDiv .bg-img", {
+  //         x: xMove * 0.3,
+  //      })
+  //    })
+  // },[showContent]);
 
 
   return (
@@ -112,6 +112,25 @@ function App() {
                       <h3 className="uppercase text-[0.9rem] font-[900] leading-0 text-center">Scroll Down</h3>
                   </div>
                   <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[55px]' src="./ps5.png" alt="" />
+               </div>
+           </div>
+           <div className="page-2 w-full h-screen flex item-center justify-center bg-black">
+               <div className="p2-container w-full h-[80%] flex items-center justify-around">
+                   <div className="left-img relative h-full w-[40vw]">
+                      <img src="./imag.png" alt="" className="p2-l-i absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                   </div>
+                   <div className="p2-content w-[40vw]">
+                       <h1 className="text-[2.5rem] font-[900] leading-[7vh] uppercase text-white ">still running,</h1>
+                       <h1 className="text-[2.5rem] font-[900] leading-[7vh] uppercase text-white ">not hunting</h1>
+                       <p className="text-[1rem] font-[600] uppercase text-white mt-10">
+                           want to get an early look at the game? sign up for the gta6 newsletter 
+                           to receive exclusive updates, trailers, and more.
+                       </p>
+                       <p className="text-[1rem] font-[600] uppercase text-white "> 
+                          GTA VI is the latest installment in the Grand Theft Auto series, 
+                          offering an expansive open world, engaging storylines, and immersive gameplay.
+                       </p>
+                   </div>
                </div>
            </div>
          </div>
