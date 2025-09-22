@@ -115,11 +115,11 @@ function App() {
                </div>
            </div>
            <div className="page-2 w-full h-screen flex item-center justify-center bg-black">
-               <div className="p2-container w-full h-[80%] mt-20 flex items-center justify-around">
+               <div className="p2-container w-full h-[80%] mt-20 flex justify-center gap-[30px]">
                    <div className="left-img relative h-full w-[40vw]">
                       <img src="./imag.png" alt="" className="p2-l-i absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                    </div>
-                   <div className="p2-content w-[40vw]">
+                   <div className="p2-content w-[40vw] pt-6">
                        <h1 className="text-[2.8rem] font-[900] leading-[8vh] uppercase text-white ">still running,</h1>
                        <h1 className="text-[2.8rem] font-[900] leading-[8vh] uppercase text-white ">not hunting</h1>
                        <p className="text-[1rem] font-[500] uppercase text-white w-[85%] mt-4">
@@ -130,6 +130,8 @@ function App() {
                           GTA VI is the latest installment in the Grand Theft Auto series, 
                           offering an expansive open world, engaging storylines, and immersive gameplay.
                        </p>
+                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-4 cursor-pointer mr-5">Sign in </button>
+                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-4 cursor-pointer ">Download</button>
                    </div>
                </div>
            </div>
