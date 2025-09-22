@@ -115,18 +115,18 @@ function App() {
                </div>
            </div>
            <div className="page-2 w-full h-screen flex item-center justify-center bg-black">
-               <div className="p2-container w-full h-[80%] flex items-center justify-around">
+               <div className="p2-container w-full h-[80%] mt-20 flex items-center justify-around">
                    <div className="left-img relative h-full w-[40vw]">
                       <img src="./imag.png" alt="" className="p2-l-i absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                    </div>
                    <div className="p2-content w-[40vw]">
-                       <h1 className="text-[2.5rem] font-[900] leading-[7vh] uppercase text-white ">still running,</h1>
-                       <h1 className="text-[2.5rem] font-[900] leading-[7vh] uppercase text-white ">not hunting</h1>
-                       <p className="text-[1rem] font-[600] uppercase text-white mt-10">
+                       <h1 className="text-[2.8rem] font-[900] leading-[8vh] uppercase text-white ">still running,</h1>
+                       <h1 className="text-[2.8rem] font-[900] leading-[8vh] uppercase text-white ">not hunting</h1>
+                       <p className="text-[1rem] font-[500] uppercase text-white w-[85%] mt-4">
                            want to get an early look at the game? sign up for the gta6 newsletter 
                            to receive exclusive updates, trailers, and more.
                        </p>
-                       <p className="text-[1rem] font-[600] uppercase text-white "> 
+                       <p className="text-[1rem] font-[500] uppercase text-white w-[85%] mt-4 "> 
                           GTA VI is the latest installment in the Grand Theft Auto series, 
                           offering an expansive open world, engaging storylines, and immersive gameplay.
                        </p>
