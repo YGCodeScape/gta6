@@ -64,6 +64,7 @@ html,body {
     }
     .text-d h1 {
         font-size : 5rem;
+        color: red;
     }
     .text-d h1:nth-child(2) {
         margin-left: 160px;
