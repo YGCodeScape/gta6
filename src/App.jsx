@@ -39,7 +39,13 @@ function App() {
      main?.addEventListener("mousemove", function(e) {
        const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
        gsap.to(".imagesDiv .text-d", {
-          x: `${ -40 - xMove}%`,
+          x: `${ -50 - xMove}%`,
+       })
+       gsap.to(".imagesDiv .sky-img", {
+          x: xMove,
+       })
+       gsap.to(".imagesDiv .bg-img", {
+          x: xMove * 0.3,
        })
      })
   },[showContent]);
@@ -89,8 +95,8 @@ function App() {
                  </div>
                </div>
                <div className="imagesDiv relative w-full h-screen overflow-hidden">
-                  <img src="./sky.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
-                  <img src="./bg.png" alt="Image" className="absolute top-0 left-0 object-cover w-full h-full" />
+                  <img src="./sky.png" alt="Image" className="sky-img absolute scale-[1.4] top-0 left-0 object-cover w-full h-full" />
+                  <img src="./bg.png" alt="Image" className="bg-img absolute scale-x-[1.1] top-0 left-0 object-cover w-full h-full" />
 
                   <div className="text-d flex flex-col gap-[25vh] text-white absolute top-[15%] left-1/2 -translate-x-1/2">
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 -ml-5'>grand</h1>
