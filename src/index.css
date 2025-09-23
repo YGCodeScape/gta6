@@ -26,7 +26,7 @@ html,body {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 850px) {
     .Gimg {
         width: 60vw;
         top: 30%;
@@ -86,6 +86,39 @@ html,body {
     }
     .svg{
         margin-top: 350px;
+    }
+
+    .p2-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 0;
+        gap: 10px;
+    }
+    .left-img, .p2-content {
+        width: 100%;
+    }
+    .left-img {
+        height: 80vh;
+    }
+    .left-img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .p2-content {
+        padding-left: 10px;
+    }
+    .p2-content h1 {
+        line-height: 50px;
+    }
+    .p2-content p{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .p2-content button {
+        font-size: 1.6rem;
     }
 
 }

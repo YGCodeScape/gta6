@@ -130,8 +130,8 @@ function App() {
                           GTA VI is the latest installment in the Grand Theft Auto series, 
                           offering an expansive open world, engaging storylines, and immersive gameplay.
                        </p>
-                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-4 cursor-pointer mr-5">Sign in </button>
-                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-4 cursor-pointer ">Download</button>
+                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-6 cursor-pointer mr-5">Sign in </button>
+                       <button className="btn bg-yellow-500 text-[1.4rem] text-black rounded-[6px] px-4 py-1 mt-6 cursor-pointer ">Download</button>
                    </div>
                </div>
            </div>
