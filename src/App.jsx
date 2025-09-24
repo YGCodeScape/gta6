@@ -42,21 +42,43 @@ function App() {
       delay: "-1",
       ease: "Expo.easeInOut"
     })
+    gsap.to(".sky.img", {
+      rotate: 0,
+      scale: 1.4,
+      duration: 2,
+      delay: "-.8",
+      ease: "Expo.easeInOut"
+    })
+    gsap.to(".bg-img", {
+      rotate: 0,
+      scale: 1.1,
+      duration: 2,
+      delay: "-.8",
+      ease: "Expo.easeInOut"
+    })
+    gsap.to(".Gimg", {
+      bottom: "-25%",
+      rotate: 0,
+      scale: 1,
+      duration: 2,
+      delay: "-.8",
+      ease: "Expo.easeInOut"
+    })
 
      const main = document.querySelector(".main");
 
-     main?.addEventListener("mousemove", function(e) {
-       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
-       gsap.to(".imagesDiv .text-d", {
-          x: `${ -50 - xMove}%`,
-       })
-       gsap.to(".imagesDiv .sky-img", {
-          x: xMove,
-       })
-       gsap.to(".imagesDiv .bg-img", {
-          x: xMove * 0.3,
-       })
-     })
+    //  main?.addEventListener("mousemove", function(e) {
+    //    const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+    //    gsap.to(".imagesDiv .text-d", {
+    //       x: `${ -50 - xMove}%`,
+    //    })
+    //    gsap.to(".imagesDiv .sky-img", {
+    //       x: xMove,
+    //    })
+    //    gsap.to(".imagesDiv .bg-img", {
+    //       x: xMove * 0.3,
+    //    })
+    //  })
   },[showContent]);
 
 
@@ -91,8 +113,8 @@ function App() {
            </svg>
       </div>
       {showContent && (
-         <div className="main w-full rotate-[10deg] scale-[1.4]">
-           <div className="landing w-full h-screen bg-[#000]">
+         <div className="main w-full rotate-[-20deg] scale-[1.5]">
+           <div className="landing w-full h-screen bg-[#000] overflow-hidden relative">
                <div className="navBar absolute top-0 left-0 z-[10] w-full h-[11vh]">
                  <div className="logo flex gap-4 align-center justify-center absolute top-1/2 left-5 -translate-y-1/2">
                     <div className="lines flex flex-col align-center justify-center gap-[2px] cursor-pointer">
@@ -104,8 +126,8 @@ function App() {
                  </div>
                </div>
                <div className="imagesDiv relative w-full h-screen overflow-hidden">
-                  <img src="./sky.png" alt="Image" className="sky-img absolute scale-[1.4] top-0 left-0 object-cover w-full h-full" />
-                  <img src="./bg.png" alt="Image" className="bg-img absolute scale-x-[1.1] top-0 left-0 object-cover w-full h-full" />
+                  <img src="./sky.png" alt="Image" className="sky-img absolute scale-[1.5] rotate-[-10deg] top-0 left-0 object-cover w-full h-full" />
+                  <img src="./bg.png" alt="Image" className="bg-img absolute scale-x-[1.8] rotate-[-3deg] top-0 left-0 object-cover w-full h-full" />
 
                   <div className="text-d flex flex-col gap-[25vh] text-white absolute top-[15%] left-1/2 -translate-x-1/2">
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 -ml-5'>grand</h1>
@@ -113,7 +135,7 @@ function App() {
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 -ml-5'>auto</h1>
                   </div>
 
-                  <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] left-1/2 -translate-x-1/2 w-[40vw] " />
+                  <img src="./girlbg.png" alt="Image" className="Gimg absolute top-[10%] bottom-[-150%]  left-1/2 -translate-x-1/2 w-[40vw] scale-[3] rotate-[-20deg] " />
                </div>
                <div className="btmBar w-full py-4 absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent pl-5">
                   <div className="bicon flex gap-1 text-white items-center">
