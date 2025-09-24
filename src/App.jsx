@@ -33,22 +33,31 @@ function App() {
     })
   });
 
-  // useGSAP(() => {
-  //    const main = document.querySelector(".main");
+  useGSAP(() => {
+    if(!showContent) return;
+    gsap.to(".main", {
+      rotate: 0,
+      scale: 1,
+      duration: 2,
+      delay: "-1",
+      ease: "Expo.easeInOut"
+    })
 
-  //    main?.addEventListener("mousemove", function(e) {
-  //      const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
-  //      gsap.to(".imagesDiv .text-d", {
-  //         x: `${ -50 - xMove}%`,
-  //      })
-  //      gsap.to(".imagesDiv .sky-img", {
-  //         x: xMove,
-  //      })
-  //      gsap.to(".imagesDiv .bg-img", {
-  //         x: xMove * 0.3,
-  //      })
-  //    })
-  // },[showContent]);
+     const main = document.querySelector(".main");
+
+     main?.addEventListener("mousemove", function(e) {
+       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
+       gsap.to(".imagesDiv .text-d", {
+          x: `${ -50 - xMove}%`,
+       })
+       gsap.to(".imagesDiv .sky-img", {
+          x: xMove,
+       })
+       gsap.to(".imagesDiv .bg-img", {
+          x: xMove * 0.3,
+       })
+     })
+  },[showContent]);
 
 
   return (
