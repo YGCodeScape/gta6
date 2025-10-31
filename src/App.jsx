@@ -136,7 +136,7 @@ function App() {
                   <img src="./sky.png" alt="Image" className="sky-img absolute scale-[1.5] rotate-[-10deg] top-0 left-0 object-cover w-full h-full" />
                   <img src="./bg.png" alt="Image" className="bg-img absolute scale-x-[1.8] rotate-[-3deg] top-0 left-0 object-cover w-full h-full" />
 
-                  <div className="text-d flex flex-col gap-[25vh] text-white absolute top-[15%] left-1/2 -translate-x-1/2 scale-[3] rotate-[10deg] ">
+                  <div className="text-d flex flex-col gap-[25vh] text-white absolute top-[15%] left-1/2 -translate-x-1/2 scale-[3] rotate-[10deg]">
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 -ml-5'>grand</h1>
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 ml-70'>theft</h1>
                      <h1 className='text-[8rem] uppercase font-[900] leading-0 -ml-5'>auto</h1>
